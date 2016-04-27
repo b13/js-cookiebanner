@@ -1,0 +1,20 @@
+.b_cookieBanner {
+  height: 60px; }
+  .b_cookieBanner .c_contentContainer {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 0;
+    position: fixed;
+    width: 100%;
+    color: #fff;
+    transition: height 300ms; }
+  .b_cookieBanner .c_content {
+    max-width: 960px;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto; }
+  .b_cookieBanner.b_cookieBannerPosition-top .c_contentContainer {
+    top: 0; }
+  .b_cookieBanner.b_cookieBannerPosition-bottom .c_contentContainer {
+    bottom: 0; }
+  .b_cookieBanner.b_cookieBannerActive .c_contentContainer {
+    height: 60px; }

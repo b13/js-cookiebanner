@@ -1,0 +1,9 @@
+{
+	"name": "js-cookieBanner",
+	"description": "lightweight cookie banner plugin",
+	"main": "dist/js-cookieBanner.min.js",
+	"version": "V0.1",
+	"dependencies": {
+		"jquery": ">= 1.8.0"
+	}
+}
