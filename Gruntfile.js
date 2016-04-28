@@ -64,6 +64,6 @@ module.exports = function (grunt) {
 
 
 	// Default task.
-	grunt.registerTask('default', ['copy:dist', 'sass', 'jsBuild', 'uglify', 'copy:test']);
+	grunt.registerTask('default', ['copy:dist', 'sass', 'uglify', 'copy:test']);
 
 };

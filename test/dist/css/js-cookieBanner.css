@@ -6,7 +6,8 @@
     position: fixed;
     width: 100%;
     color: #fff;
-    transition: height 300ms; }
+    transition: height 300ms;
+    overflow: hidden; }
   .b_cookieBanner .c_content {
     max-width: 960px;
     padding: 15px;
