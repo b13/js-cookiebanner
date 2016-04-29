@@ -1,0 +1,40 @@
+
+@import "js-cookieBannerVariables";
+
+
+.b_cookieBanner {
+	height: @cb_height;
+
+	.c_contentContainer {
+		background-color: rgba(@cb_bgColor, @cb_bgColorOpacity);
+		height: 0;
+		position: fixed;
+		width: 100%;
+		color: @cb_color;
+		transition: height 300ms;
+		overflow: hidden;
+	}
+
+	.c_content {
+		max-width: @cb_maxWidth;
+		padding: @cb_padding;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+		// banner position
+	&.b_cookieBannerPosition {
+		&-top .c_contentContainer {
+			top: 0;
+		}
+		&-bottom .c_contentContainer {
+			bottom: 0;
+		}
+	}
+
+	&.b_cookieBannerActive {
+		.c_contentContainer {
+			height: @cb_height;
+		}
+	}
+}

@@ -54,6 +54,20 @@ module.exports = function (grunt) {
 					'dist/js-cookieBanner.css': 'scss/js-cookieBanner.scss'
 				}
 			}
+		},
+
+		less : {
+			development: {
+				options: {
+					compress    : false,
+					yuicompress : false,
+					cleancss    : false,
+					optimization: null
+				},
+				files: {
+					'dist/js-cookieBanner.css': 'less/js-cookieBanner.less'
+				}
+			}
 		}
 	});
 
@@ -61,9 +75,11 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-sass');
+	grunt.loadNpmTasks('grunt-less');
 
 
 	// Default task.
+	//grunt.registerTask('default', ['copy:dist', 'less', 'uglify', 'copy:test']);
 	grunt.registerTask('default', ['copy:dist', 'sass', 'uglify', 'copy:test']);
 
 };
