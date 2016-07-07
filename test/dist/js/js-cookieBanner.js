@@ -82,7 +82,7 @@
 					$(_opts.selectors.cookieBanner).addClass(_opts.classNames.positionBottom);
 
 				} else if (_opts.position == "top") {
-					$('body').prepend(_opts.html);
+					$('body').prepend(_opts.htmlContainer);
 					$(_opts.selectors.cookieBanner).addClass(_opts.classNames.positionTop);
 				}
 

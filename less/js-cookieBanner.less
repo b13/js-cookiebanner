@@ -3,21 +3,21 @@
 
 
 .b_cookieBanner {
-	height: $cb_height;
+	height: @cb_height;
 
 	.c_contentContainer {
-		background-color: rgba($cb_bgColor, $cb_bgColorOpacity);
+		background-color: rgba(@cb_bgColor, @cb_bgColorOpacity);
 		height: 0;
 		position: fixed;
 		width: 100%;
-		color: $cb_color;
+		color: @cb_color;
 		transition: height 300ms;
 		overflow: hidden;
 	}
 
 	.c_content {
-		max-width: $cb_maxWidth;
-		padding: $cb_padding;
+		max-width: @cb_maxWidth;
+		padding: @cb_padding;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -34,7 +34,7 @@
 
 	&.b_cookieBannerActive {
 		.c_contentContainer {
-			height: $cb_height;
+			height: @cb_height;
 		}
 	}
 }

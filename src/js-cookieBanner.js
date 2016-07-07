@@ -82,7 +82,7 @@
 					$(_opts.selectors.cookieBanner).addClass(_opts.classNames.positionBottom);
 
 				} else if (_opts.position == "top") {
-					$('body').prepend(_opts.html);
+					$('body').prepend(_opts.htmlContainer);
 					$(_opts.selectors.cookieBanner).addClass(_opts.classNames.positionTop);
 				}
 
@@ -111,7 +111,7 @@
 				evt.preventDefault();
 				setCookie(true);
 				// hide banner and remove it
-				$(_opts.selectors.cookieBanner).removeClass(_opts.state.active);
+				$(_opts.selectors.cookieBanner).removeClass(_opts.states.active);
 				setTimeout(function() {
 					$(_opts.selectors.cookieBanner).remove();
 				},1000);
