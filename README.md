@@ -43,8 +43,9 @@ Lightweight javascript cookie banner plugin
 
 			// selectors
 		, selectors: {
-			cookieBanner         : '#bJS_cookieBanner'
-			, acceptCookieBanner : '.bJS_acceptCookieBanner'
+			cookieBanner          : '#bJS_cookieBanner'
+			, cookieBannerContent : '#bJS_cookieBannerContent'
+			, acceptCookieBanner  : '.bJS_acceptCookieBanner'
 		}
 			// class names
 		, classNames: {
